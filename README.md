@@ -21,17 +21,25 @@ Utility function of household, mean-variance investor, behavior finance theory a
 ### Brief plan:
 1. Preprocessing of data
 
-⋅⋅* Dependent variable can be put into three categroies to show whether the P2P is successful. 
-⋅⋅* Independent variable should be normalized or standardized and some outliers should be removed. Also,PCA or LDA methods may be used for the credit history data to reduce the curse of dimensionality. I give a brief description of basic information about p2p contract data below.
+· Dependent variable can be put into three categroies to show whether the P2P is successful. 
+· Independent variable should be normalized or standardized and some outliers should be removed. Also,PCA or LDA methods may be used for the credit history data to reduce the curse of dimensionality. I give a brief description of basic information about p2p contract data below.
+· Randomly divide training set and test set.
 
 | Variable name      |  unit  |  range     | median  | mean  |
 | -------------      |-------:|-----------:| -------:|------:|
 | principal          |RMB yuan| 3000-500000|  43100  | 66027 |
 | interest rate      |        | 9.5%-24%   |  15%    | 14.05%|
-| maturity           |  month | 3-36       |  18     | 17.52 |
+| maturity           |  month |    3-36    |   18    |  17.52|
 
 You can find the following graph showing the histogram of them.
 
-Using many kinds of machine learning method (logistic regression, SVM, KNN, decision tree) to form a good model to predict whether it will be a success or failure. Using accuracy as a measure of model performance. And base on this model, give potential borrower advice on whether their condition can get the loan or they should increase interest rate or do something similar to attract more lenders.
-Time permitted, may do comparison with other P2P platform data.
-3
+2. Prediction of the model 
+Using many kinds of machine learning method (logistic regression, SVM, KNN, decision tree) to form a good model to predict whether it will be a success or failure. Using majority voting to increase the performance of the model. Try to balance the bias and variance by regularization. 
+For the fifth part of the data, I may try to process them with sentiment analysis but there are still many problems here. How to do work stemming and decide gram for Chinese may be hard as this language is really complicated.
+
+3. Measurement of model performance
+For the measurement of the performance of the model, I plan to use accuracy as a measure of model performance. And base on this model, give potential borrower advice on whether their condition can get the loan or they should increase interest rate or do something similar to attract more lenders. In this way, this platform can work better to match potential borrowers and lenders.
+
+4. Possible extension
+Time permitted, may do comparison with other P2P platform data to show the robustness of the predicting model.
+
