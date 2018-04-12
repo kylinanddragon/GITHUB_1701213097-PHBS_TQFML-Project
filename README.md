@@ -1,9 +1,10 @@
 # GITHUB_1701213097-PHBS_TQFML-Project
 This include analysis on one platform of small amount credit in China——Renren dai
-Repostiory name：Analysis on P2P success 
-Team members: Winnie Wang (Wang Xinbo)
-Data set: Over 9000 samples on Renren dai website. 
+## H2 Repostiory name：Analysis on P2P success 
+#### H4 Team members: Winnie Wang (Wang Xinbo)
+#### H4 Data set: Over 9000 samples on Renren dai website. 
 Renren dai is one of the biggest online P2P website in China. It is honored as top 100 internet companies in both 2015 and 2016.
+
 The data mainly contains five kinds of information.
 1)	Whether the p2p contract is success. This is used as dependent variable here.
 2)	Basic information about p2p contract including principal, interest rate,
