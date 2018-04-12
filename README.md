@@ -31,8 +31,6 @@ Randomly divide training set and test set.
 | interest rate      |        | 9.5%-24%   |  15%    | 14.05%|
 | maturity           |  month |    3-36    |   18    |  17.52|
 
-You can find the following graph showing the histogram of them.
-
 #### 2. Prediction of the model 
 Using many kinds of machine learning method (logistic regression, SVM, KNN, decision tree) to form a good model to predict whether it will be a success or failure. Using majority voting to increase the performance of the model. Try to balance the bias and variance by regularization. 
 For the fifth part of the data, I may try to process them with sentiment analysis but there are still many problems here. How to do work stemming and decide gram for Chinese may be hard as this language is really complicated.
