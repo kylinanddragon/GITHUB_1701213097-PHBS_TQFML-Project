@@ -10,8 +10,9 @@ The data mainly contains five kinds of information.
 1.	Whether the p2p contract is success. This is used as **dependent variable** here.
 2.	Basic information about p2p contract including principal, interest rate,
 duration
+correlation analysis show strong edvidence of their influence on p2p success
 3.	Basic information about borrower: Income, education background, age, job, city, marital status.
-4.	Index representing borrower’s credit history: credit score, line of credit, all kinds of credit report and authentication. 
+4.	Index representing borrower’s credit history: credit score, line of credit, all kinds of credit report and authentication. (15 dummy variables here)
 5.	Brief introduction of the usage of money. 
 2-5 are all potential **independent variables** for the model.
 
