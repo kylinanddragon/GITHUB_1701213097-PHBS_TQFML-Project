@@ -42,3 +42,6 @@ For the measurement of the performance of the model, I plan to use accuracy as a
 #### 4. Possible extension
 Time permitted, may do comparison with other P2P platform data to show the robustness of the predicting model.
 
+The csv contains translated version of some variables used for the analysis of this question.
+
+Generally speaking, most methods show high explaining power and accuracy when we add most of the potential variables in but we haven't put L1 L2 PCA in consideration yet.
