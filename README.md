@@ -44,4 +44,14 @@ Time permitted, may do comparison with other P2P platform data to show the robus
 
 The csv contains translated version of some variables used for the analysis of this question.
 
-Generally speaking, most methods show high explaining power and accuracy when we add most of the potential variables in but we haven't put L1 L2 PCA in consideration yet.
+Generally speaking, most methods show high explaining power and accuracy when we add most of the potential variables in.
+
+PCA method show if we use 3-5 PCA components, the explaining power can be kept compared with using all variables.
+Reducing components to 2 will cause relatively large fall in accuracy, increasing number of components to 10 don't significantly change 
+accuracy.
+
+We try stratified k-fold crossvalidation and the CV-accuracy score is about 0.952.
+
+We use majorty voting combining logistic,decision tree and KNN(more hyperparameter tuning to be done here) and get higher AUC/ROC score.
+
+Diffculties when dealing with sentiment analysis.( Try use some key words rather than analyzing the whole text)
