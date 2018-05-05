@@ -1,0 +1,39 @@
+## Brief Description of the project and dataset
+This project focus on predicting the probability of success of P2P loan application. As online payment and electronic bank become more and
+more popular in China, more people are managing their wealth using online platforms. And the development of credit reporting system also 
+promote the development of online small amount borrowings. 
+This dataset contains 9769 samples from one of the biggest P2P website in China——RenRenDai.
+
+## Variable lists
+
+The explained variable in this model is status. The value of status equals 0 for failure and 1 for success. Null value show that this application
+hasn't finished and we don't know the result yet. We remove this part of samples, the remaining samples contain 7495 data points.
+
+y is relatively balanced with 64.52% 1 and 35.48% 0.
+
+The explaining variable list is relatively long, among them, the most important ones directly related to the cash flow of the contract are:
+
+Target: Total principal money amount of P2P contract. The unit is in RMB.
+Interest: Annualized interest rate of the P2P contract. Average interest rate is 14% here which is relatively high.
+Maturity: Length of the P2P contract (When will the last cash flow take place) The unit is in month and the average value is about 18 months,
+which is one and a half year, which is relatively short.
+These three variables can generate "payment"(to be more precise, monthly payment) by using the method of discounting cash flow. But the latter
+can't fully embody the characteristics of these three variables.
+
+Other potential explaining variables include demographic information of borrower, credit history and credit certificate:
+
+Age: Average is about 32. 
+Income: Monthly income. It is sorted into categories of: below 1000, 1000-2000, 2000-5000, 5000-10000, 10000-20000, 20000-50000, above 50000
+Education: Highest education level ever received. It is sorted into categories of: High school, junior college, undergraduate and master.
+Workingtime: How long has he been doing current jobs. It is sorted into categories of: below 1 years, 1-3 years, 3-5 years, above 5 years.
+Scaleofcompany: The scale of company he or she is now working for, also sorted into categories of: less than 10, 10-100, 100-500, above 500
+Marriage: Sorted into categories of: Single, marriage, divorced, widow.
+These four category variables above will be analyzed by Ohe method.
+
+Past success(default): Times of successful(failed) applications.
+Certificates: Whether the borrow has past the certificate of certain items: Like identitycertificate, marriagecertificate, incomecertificate,
+educatecertificate...
+Many variables here so we use PCA method to cut dimensions.
+
+
+
