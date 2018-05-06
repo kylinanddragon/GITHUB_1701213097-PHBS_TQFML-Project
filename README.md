@@ -15,45 +15,61 @@ correlation analysis show strong edvidence of their influence on p2p success
 4.	Index representing borrower’s credit history: credit score, line of credit, all kinds of credit report and authentication. (15 dummy variables here)
 5.	Brief introduction of the usage of money. 
 2-5 are all potential **independent variables** for the model.
-Two dataset are used for total analysis: [dataset of renren dai](dataset of renren dai) and [sentiment analysis](sentiment analysis)
-More detailed decription of dataset can be found in:[data description](data description)
+Two dataset are used for total analysis: [dataset of renren dai](dataset of renren dai.csv) and [sentiment analysis](sentiment analysis.csv)
+More detailed decription of dataset can be found in:[data description](GITHUB_1701213097-PHBS_TQFML-Project/data description)
 
 ## Possible supported theory
 Utility function of household, mean-variance investor, behavior finance theory about familiarity and availability, etc.
 
-## Brief plan:
+## Brief plan and result:
 #### 1. Preprocessing of data
 
 **Dependent variable** can be put into three categroies to show whether the P2P is successful. 
-**Independent variable** should be normalized or standardized and some outliers should be removed. Also,PCA or LDA methods may be used for the credit history data to reduce the curse of dimensionality. I give a brief description of basic information about p2p contract data below.
+**Independent variable** should be normalized or standardized and some outliers should be removed. Also,PCA method are used for the credit history data to reduce the curse of dimensionality. I give a brief description of basic information about p2p contract data below.
 Randomly divide training set and test set.
 
-| Variable name      |  unit  |  range     | median  | mean  |
-| -------------      |-------:|-----------:| -------:|------:|
-| principal          |RMB yuan| 3000-500000|  43100  | 66027 |
-| interest rate      |        | 9.5%-24%   |  15%    | 14.05%|
-| maturity           |  month |    3-36    |   18    |  17.52|
+| Variable name      |  unit  |  range     | mean  |
+| -------------      |-------:|-----------:|------:|
+| principal          |RMB yuan| 3000-500000| 64464 |
+| interest rate      |        | 10 %-24 %  | 14.01%|
+| maturity           |  month |    3-36    |  18.65|
 
 #### 2. Prediction of the model 
-Using many kinds of machine learning method (logistic regression, SVM, KNN, decision tree) to form a good model to predict whether it will be a success or failure. Using majority voting to increase the performance of the model. Try to balance the bias and variance by regularization. 
-For the fifth part of the data, I may try to process them with sentiment analysis but there are still many problems here. How to do work stemming and decide gram for Chinese may be hard as this language is really complicated.
+Using many kinds of machine learning method (logistic regression, SVM, KNN, decision tree) to form a good model to predict whether it will be a success or failure. Using majority voting to increase the performance of the model. 
+I also use bagging and 
+For the fifth part of the data, I try to process them with sentiment analysis and I derive two variables from 
+
 
 #### 3. Measurement of model performance
 For the measurement of the performance of the model, I plan to use accuracy as a measure of model performance. And base on this model, give potential borrower advice on whether their condition can get the loan or they should increase interest rate or do something similar to attract more lenders. In this way, this platform can work better to match potential borrowers and lenders.
+The predicting power is quiet high using these explaining variables, the detailed data is as followed:
+                                      | Method      | Explaining variable | Accuracy | Misclassified samples|
+                                      |------------:|--------------------:|---------:|---------------------:|
+                                      |  Logisitc  :|         All        :|   0.98  :|         40          :|
+                                      |  Perceptron:|         All        :|   0.97  :|         66          :|
+                                      |  SVC       :|         All        :|   0.98  :|         37          :|
+                                      |  kernel SVC:|         All        :|   0.96  :|         82          :|
+                                      |Decisiontree:|         All        :|   0.97  :|         75          :|
+                                      |Randomforest:|         All        :|   0.97  :|         66          :|
+                                      |  KNN       :|         All        :|   0.97  :|         76          :|
+                                      |  Perceptron:|         Core       :|   0.97  :|         76          :|
+                                      |  Logisitc  :|         Core       :|   0.96  :|         100         :|
+                                      |  SVC       :|         Core       :|   0.96  :|         91          :|
+                                      |  kernel SVC:|         Core       :|   0.96  :|         90          :|
+                                      |Decisiontree:|         Core       :|   0.96  :|         100         :|
+                                      |Randomforest:|         Core       :|   0.96  :|         101         :|
+                                      |  KNN       :|         Core       :|   0.96  :|         93          :|
+                                      |-----------: |--------------------:|---------:|---------------------:|
+For PCA method, 3-5 PCA components have relatively high predicting accuracy about 0.97, adding it to 10 components won't improve accuracy much, while deducting it to 2 will lose accuracy.
+We later check that our selection of parameters and division of training/testing sample is rational.
+K-fold method also give high accuracy of predicting.
+Then we increase the ROC/AUC to 0.96 by using majorty voting combining methods of Logisitic,decision tree and KNN.
+Bagging and Adaboosting also help improve the accuracy here.
 
-#### 4. Possible extension
-Time permitted, may do comparison with other P2P platform data to show the robustness of the predicting model.
+#### 4. Extension
+We meet some difficulties when trying to use sentiment analysis on our dataset. We derive two sentiment variables from the description and find prediction based on these two sentiment variables can have about 0.8 accuracy. However, it is likely that this explaining power is mainly due to their relationship with core variables.
 
-The csv contains translated version of some variables used for the analysis of this question.
+### Implentation 
+[Analysis of renrendai](Analysis of renrendai.ipynb)
 
-Generally speaking, most methods show high explaining power and accuracy when we add most of the potential variables in.
-
-PCA method show if we use 3-5 PCA components, the explaining power can be kept compared with using all variables.
-Reducing components to 2 will cause relatively large fall in accuracy, increasing number of components to 10 don't significantly change 
-accuracy.
-
-We try stratified k-fold crossvalidation and the CV-accuracy score is about 0.952.
-
-We use majorty voting combining logistic,decision tree and KNN(more hyperparameter tuning to be done here) and get higher AUC/ROC score.
-
-Diffculties when dealing with sentiment analysis.( Try use some key words rather than analyzing the whole text)
+### Conclusion
