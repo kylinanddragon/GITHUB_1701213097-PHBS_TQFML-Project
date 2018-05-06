@@ -15,6 +15,8 @@ correlation analysis show strong edvidence of their influence on p2p success
 4.	Index representing borrower’s credit history: credit score, line of credit, all kinds of credit report and authentication. (15 dummy variables here)
 5.	Brief introduction of the usage of money. 
 2-5 are all potential **independent variables** for the model.
+Two dataset are used for total analysis: [dataset of renren dai](dataset of renren dai) and [sentiment analysis](sentiment analysis)
+More detailed decription of dataset can be found in:[data description](data description)
 
 ## Possible supported theory
 Utility function of household, mean-variance investor, behavior finance theory about familiarity and availability, etc.
