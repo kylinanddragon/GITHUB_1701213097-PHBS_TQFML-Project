@@ -44,7 +44,7 @@ For the fifth part of the data, I try to process them with sentiment analysis an
 For the measurement of the performance of the model, I plan to use accuracy as a measure of model performance. And base on this model, give potential borrower advice on whether their condition can get the loan or they should increase interest rate or do something similar to attract more lenders. In this way, this platform can work better to match potential borrowers and lenders.
 The predicting power is quiet high using these explaining variables, the detailed data is as followed:
 | Method      | Explaining variable | Accuracy | Misclassified samples|
-|------------ |--------------------:|---------:|---------------------:|
+| ----------- |--------------------:|---------:|---------------------:|
 |  Logisitc   |         All         |   0.98   |         40           |
 |  Perceptron |         All         |   0.97   |         66           |
 |  SVC        |         All         |   0.98   |         37           |
