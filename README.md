@@ -43,23 +43,23 @@ For the fifth part of the data, I try to process them with sentiment analysis an
 #### 3. Measurement of model performance
 For the measurement of the performance of the model, I plan to use accuracy as a measure of model performance. And base on this model, give potential borrower advice on whether their condition can get the loan or they should increase interest rate or do something similar to attract more lenders. In this way, this platform can work better to match potential borrowers and lenders.
 The predicting power is quiet high using these explaining variables, the detailed data is as followed:
-                                      | Method      | Explaining variable | Accuracy | Misclassified samples|
-                                      |------------:|--------------------:|---------:|---------------------:|
-                                      |  Logisitc  :|         All        :|   0.98  :|         40          :|
-                                      |  Perceptron:|         All        :|   0.97  :|         66          :|
-                                      |  SVC       :|         All        :|   0.98  :|         37          :|
-                                      |  kernel SVC:|         All        :|   0.96  :|         82          :|
-                                      |Decisiontree:|         All        :|   0.97  :|         75          :|
-                                      |Randomforest:|         All        :|   0.97  :|         66          :|
-                                      |  KNN       :|         All        :|   0.97  :|         76          :|
-                                      |  Perceptron:|         Core       :|   0.97  :|         76          :|
-                                      |  Logisitc  :|         Core       :|   0.96  :|         100         :|
-                                      |  SVC       :|         Core       :|   0.96  :|         91          :|
-                                      |  kernel SVC:|         Core       :|   0.96  :|         90          :|
-                                      |Decisiontree:|         Core       :|   0.96  :|         100         :|
-                                      |Randomforest:|         Core       :|   0.96  :|         101         :|
-                                      |  KNN       :|         Core       :|   0.96  :|         93          :|
-                                      |-----------: |--------------------:|---------:|---------------------:|
+| Method      | Explaining variable | Accuracy | Misclassified samples|
+|------------:|--------------------:|---------:|---------------------:|
+|  Logisitc  :|         All        :|   0.98  :|         40          :|
+|  Perceptron:|         All        :|   0.97  :|         66          :|
+|  SVC       :|         All        :|   0.98  :|         37          :|
+|  kernel SVC:|         All        :|   0.96  :|         82          :|
+|Decisiontree:|         All        :|   0.97  :|         75          :|
+|Randomforest:|         All        :|   0.97  :|         66          :|
+|  KNN       :|         All        :|   0.97  :|         76          :|
+|  Perceptron:|         Core       :|   0.97  :|         76          :|
+|  Logisitc  :|         Core       :|   0.96  :|         100         :|
+|  SVC       :|         Core       :|   0.96  :|         91          :|
+|  kernel SVC:|         Core       :|   0.96  :|         90          :|
+|Decisiontree:|         Core       :|   0.96  :|         100         :|
+|Randomforest:|         Core       :|   0.96  :|         101         :|
+|  KNN       :|         Core       :|   0.96  :|         93          :|
+                                     
 For PCA method, 3-5 PCA components have relatively high predicting accuracy about 0.97, adding it to 10 components won't improve accuracy much, while deducting it to 2 will lose accuracy.
 We later check that our selection of parameters and division of training/testing sample is rational.
 K-fold method also give high accuracy of predicting.
