@@ -51,8 +51,8 @@ The predicting power is quiet high using these explaining variables, the detaile
 |  SVC        |         All         |   0.98   |         37           |
 |  kernel SVC |         All         |   0.96   |         82           |
 |Decisiontree |         All         |   0.97   |         75           |
-|Randomforest |         All         |   0.97   |         66           |
-|  KNN        |         All         |   0.97   |         76           |
+|Randomforest |          All        |   0.97   |          66          |
+|  KNN        |          All        |   0.97   |          76          |
 |  Perceptron |         Core        |   0.97   |         76           |
 |  Logisitc   |         Core        |   0.96   |         100          |
 |  SVC        |         Core        |   0.96   |         91           |
