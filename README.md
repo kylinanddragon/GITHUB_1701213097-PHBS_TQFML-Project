@@ -16,7 +16,7 @@ correlation analysis show strong edvidence of their influence on p2p success
 5.	Brief introduction of the usage of money. 
 2-5 are all potential **independent variables** for the model.
 Two dataset are used for total analysis: [dataset of renren dai](https://github.com/kylinanddragon/GITHUB_1701213097-PHBS_TQFML-Project/blob/master/dataset%20of%20renren%20dai.csv) and [sentiment analysis](https://github.com/kylinanddragon/GITHUB_1701213097-PHBS_TQFML-Project/blob/master/sentiment%20analysis.csv)
-More detailed decription of dataset can be found in:[data description](GITHUB_1701213097-PHBS_TQFML-Project/data description)
+More detailed decription of dataset can be found in:[data description](https://github.com/kylinanddragon/GITHUB_1701213097-PHBS_TQFML-Project/blob/master/data%20description)
 
 ## Possible supported theory
 Utility function of household, mean-variance investor, behavior finance theory about familiarity and availability, etc.
@@ -71,7 +71,7 @@ Bagging and Adaboosting also help improve the accuracy here.
 We meet some difficulties when trying to use sentiment analysis on our dataset. We derive two sentiment variables from the description and find prediction based on these two sentiment variables can have about 0.8 accuracy. However, it is likely that this explaining power is mainly due to their relationship with core variables.
 
 ### Implentation 
-[Analysis of renrendai](GITHUB_1701213097-PHBS_TQFML-Project/Analysis of renrendai.ipynb)
+#[Analysis of renrendai](https://github.com/kylinanddragon/GITHUB_1701213097-PHBS_TQFML/Project/blob/master/Analysis%20of%20renrendai.ipynb)
 
 ### Conclusion
 We derive a classifier based on public information of p2p contract and applicants with *high accuracy*. This classifier contains information about *payment information of p2p contract*, *demographic information of borrower* and *credit history of borrower*.<br> And among them, though the latter two part contribute to the accuracy of model estimation, payment information itself has relatively high predicting accuracy. 
