@@ -33,6 +33,7 @@ Randomly divide training set and test set.
 | principal          |RMB yuan| 3000-500000| 64464 |
 | interest rate      |        | 10 %-24 %  | 14.01%|
 | maturity           |  month |    3-36    |  18.65|
+
 ![alt text](https://github.com/kylinanddragon/GITHUB_1701213097-PHBS_TQFML-Project/blob/master/relationship.png)
 
 #### 2. Prediction of the model 
@@ -66,6 +67,7 @@ We later check that our selection of parameters and division of training/testing
 K-fold method also give high accuracy of predicting.
 Then we increase the ROC/AUC to 0.96 by using majorty voting combining methods of Logisitic,decision tree and KNN.
 ![alt text](https://github.com/kylinanddragon/GITHUB_1701213097-PHBS_TQFML-Project/blob/master/ROC%20AUC%20curve.png)
+
 Bagging and Adaboosting also help improve the accuracy here.
 
 #### 4. Method of sentiment analysis
@@ -79,3 +81,4 @@ We derive a classifier based on public information of p2p contract and applicant
 We can derive some information from borrower's description about the intent of borrowing, "urgent" borrowers are more likely to get loans compared to "stable" borrowers due to they provide higher interest rate and the certificate information are not mattered so much considering the analysis in first part.
 
 ### Further extension
+Match interest rate with short-term treasury bond rate/ Extrapolate on other p2p platforms/ Tracking data of one special p2p contract to see how long it takes to gather money(Related with limited attention)
