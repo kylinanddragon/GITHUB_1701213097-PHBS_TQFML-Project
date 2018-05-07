@@ -18,9 +18,6 @@ correlation analysis show strong edvidence of their influence on p2p success
 Two dataset are used for total analysis: [dataset of renren dai](https://github.com/kylinanddragon/GITHUB_1701213097-PHBS_TQFML-Project/blob/master/dataset%20of%20renren%20dai.csv) and [sentiment analysis](https://github.com/kylinanddragon/GITHUB_1701213097-PHBS_TQFML-Project/blob/master/sentiment%20analysis.csv)
 More detailed decription of dataset can be found in:[data description](https://github.com/kylinanddragon/GITHUB_1701213097-PHBS_TQFML-Project/blob/master/data%20description)
 
-## Possible supported theory
-Utility function of household, mean-variance investor, behavior finance theory about familiarity and availability, etc.
-
 ## Brief plan and result:
 #### 1. Preprocessing of data
 
@@ -79,6 +76,14 @@ We meet some difficulties when trying to use sentiment analysis on our dataset. 
 ### Conclusion
 We derive a classifier based on public information of p2p contract and applicants with *high accuracy*. This classifier contains information about *payment information of p2p contract*, *demographic information of borrower* and *credit history of borrower*.<br> And among them, though the latter two part contribute to the accuracy of model estimation, payment information itself has relatively high predicting accuracy. 
 We can derive some information from borrower's description about the intent of borrowing, "urgent" borrowers are more likely to get loans compared to "stable" borrowers due to they provide higher interest rate and the certificate information are not mattered so much considering the analysis in first part.
+
+## Possible supported theory
+1. Limited attention
+People's attention is limited so their main attention maybe on the interest rate, principal and maturity at first and search or rank by that. 
+2. Information asymmetry
+It's somehow like a lemon market that lender can't clearly find the exact quality of borrower, though credit history provide some information, it is not enough. So the influence of most direct thing related with payment dominates here.
+3. People's risk preference
+People who participate in p2p market and act as a lender are more likely to be risk taking person, these people care less about risk and more about return relatively.
 
 ### Further extension
 Match interest rate with short-term treasury bond rate/ Extrapolate on other p2p platforms/ Tracking data of one special p2p contract to see how long it takes to gather money(Related with limited attention)
