@@ -71,7 +71,7 @@ Bagging and Adaboosting also help improve the accuracy here.
 We meet some difficulties when trying to use sentiment analysis on our dataset. We derive two sentiment variables from the description and find prediction based on these two sentiment variables can have about 0.8 accuracy. However, it is likely that this explaining power is mainly due to their relationship with core variables.
 
 ### Implentation 
-[Analysis of renrendai](GITHUB_1701213097-PHBS_TQFML-Project/Analysis of renrendai.ipynb).
+[Analysis of renrendai](Analysis of renrendai.ipynb).
 
 ### Conclusion
 We derive a classifier based on public information of p2p contract and applicants with *high accuracy*. This classifier contains information about *payment information of p2p contract*, *demographic information of borrower* and *credit history of borrower*.<br> And among them, though the latter two part contribute to the accuracy of model estimation, payment information itself has relatively high predicting accuracy. 
