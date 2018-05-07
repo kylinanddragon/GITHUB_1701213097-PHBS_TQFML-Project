@@ -37,8 +37,8 @@ Randomly divide training set and test set.
 #### 2. Prediction of the model 
 Using many kinds of machine learning method (logistic regression, SVM, KNN, decision tree) to form a good model to predict whether it will be a success or failure. Using majority voting to increase the performance of the model. 
 I also use bagging and 
-For the fifth part of the data, I try to process them with sentiment analysis and I derive two variables from 
-
+For the fifth part of the data, I try to process them with sentiment analysis and I derive two variables from it.
+![alt text](https://github.com/kylinanddragon/GITHUB_1701213097-PHBS_TQFML-Project/blob/master/relationship.png)
 
 #### 3. Measurement of model performance
 For the measurement of the performance of the model, I plan to use accuracy as a measure of model performance. And base on this model, give potential borrower advice on whether their condition can get the loan or they should increase interest rate or do something similar to attract more lenders. In this way, this platform can work better to match potential borrowers and lenders.
