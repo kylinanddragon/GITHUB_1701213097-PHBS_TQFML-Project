@@ -33,12 +33,12 @@ Randomly divide training set and test set.
 | principal          |RMB yuan| 3000-500000| 64464 |
 | interest rate      |        | 10 %-24 %  | 14.01%|
 | maturity           |  month |    3-36    |  18.65|
+![alt text](https://github.com/kylinanddragon/GITHUB_1701213097-PHBS_TQFML-Project/blob/master/relationship.png)
 
 #### 2. Prediction of the model 
 Using many kinds of machine learning method (logistic regression, SVM, KNN, decision tree) to form a good model to predict whether it will be a success or failure. Using majority voting to increase the performance of the model. 
 I also use bagging and 
 For the fifth part of the data, I try to process them with sentiment analysis and I derive two variables from it.
-![alt text](https://github.com/kylinanddragon/GITHUB_1701213097-PHBS_TQFML-Project/blob/master/relationship.png)
 
 #### 3. Measurement of model performance
 For the measurement of the performance of the model, I plan to use accuracy as a measure of model performance. And base on this model, give potential borrower advice on whether their condition can get the loan or they should increase interest rate or do something similar to attract more lenders. In this way, this platform can work better to match potential borrowers and lenders.
@@ -65,6 +65,7 @@ For PCA method, 3-5 PCA components have relatively high predicting accuracy abou
 We later check that our selection of parameters and division of training/testing sample is rational.
 K-fold method also give high accuracy of predicting.
 Then we increase the ROC/AUC to 0.96 by using majorty voting combining methods of Logisitic,decision tree and KNN.
+![alt text](https://github.com/kylinanddragon/GITHUB_1701213097-PHBS_TQFML-Project/blob/master/ROC%20AUC%20curve.png)
 Bagging and Adaboosting also help improve the accuracy here.
 
 #### 4. Method of sentiment analysis
