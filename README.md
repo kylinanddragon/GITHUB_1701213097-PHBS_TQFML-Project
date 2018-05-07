@@ -15,7 +15,7 @@ correlation analysis show strong edvidence of their influence on p2p success
 4.	Index representing borrower’s credit history: credit score, line of credit, all kinds of credit report and authentication. (15 dummy variables here)
 5.	Brief introduction of the usage of money. 
 2-5 are all potential **independent variables** for the model.
-Two dataset are used for total analysis: [dataset of renren dai](dataset of renren dai.csv) and [sentiment analysis](sentiment analysis.csv)
+Two dataset are used for total analysis: [dataset of renren dai](https://github.com/kylinanddragon/GITHUB_1701213097-PHBS_TQFML-Project/blob/master/dataset%20of%20renren%20dai.csv) and [sentiment analysis](sentiment analysis.csv)
 More detailed decription of dataset can be found in:[data description](GITHUB_1701213097-PHBS_TQFML-Project/data description)
 
 ## Possible supported theory
