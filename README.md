@@ -51,8 +51,8 @@ The predicting power is quiet high using these explaining variables, the detaile
 |  SVC        |         All         |   0.98   |         37           |
 |  kernel SVC |         All         |   0.96   |         82           |
 |Decisiontree |         All         |   0.97   |         75           |
-|Randomforest |          All        |   0.97   |          66          |
-|  KNN        |          All        |   0.97   |          76          |
+|Randomforest |         All         |   0.97   |         66           |
+|  KNN        |         All         |   0.97   |         76           |
 |  Perceptron |         Core        |   0.97   |         76           |
 |  Logisitc   |         Core        |   0.96   |         100          |
 |  SVC        |         Core        |   0.96   |         91           |
@@ -67,10 +67,14 @@ K-fold method also give high accuracy of predicting.
 Then we increase the ROC/AUC to 0.96 by using majorty voting combining methods of Logisitic,decision tree and KNN.
 Bagging and Adaboosting also help improve the accuracy here.
 
-#### 4. Extension
+#### 4. Method of sentiment analysis
 We meet some difficulties when trying to use sentiment analysis on our dataset. We derive two sentiment variables from the description and find prediction based on these two sentiment variables can have about 0.8 accuracy. However, it is likely that this explaining power is mainly due to their relationship with core variables.
 
 ### Implentation 
 [Analysis of renrendai](Analysis of renrendai.ipynb)
 
 ### Conclusion
+We derive a classifier based on public information of p2p contract and applicants with *high accuracy*. This classifier contains information about *payment information of p2p contract*, *demographic information of borrower* and *credit history of borrower*.<br> And among them, though the latter two part contribute to the accuracy of model estimation, payment information itself has relatively high predicting accuracy. 
+We can derive some information from borrower's description about the intent of borrowing, "urgent" borrowers are more likely to get loans compared to "stable" borrowers due to they provide higher interest rate and the certificate information are not mattered so much considering the analysis in first part.
+
+### Further extension
