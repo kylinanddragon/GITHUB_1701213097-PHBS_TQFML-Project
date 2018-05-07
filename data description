@@ -36,8 +36,7 @@ educatecertificate...
 Many variables here so we use PCA method to cut dimensions.
 
 
-## [Sentiment analysis dataset](sentiment analysis.csv).
-[sentiment analysis](sentiment analysis.csv)
+## Sentiment analysis dataset
 It is similar with the main variable dataset with two new variables("urgent" and "stable") denoting people's type in the description they submit.
 If character "急"(urgent) can be found in description, then the dummy variable of "urgent" equals to 1, otherwise it equals to 0.
 If character "稳定" or "良好"(Often followed by "信用"--credit) can be found in description, then dummy variable equals to 1, otherwise it equals to 0.
