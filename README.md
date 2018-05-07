@@ -46,18 +46,18 @@ The predicting power is quiet high using these explaining variables, the detaile
 
 | Method      | Explaining variable | Accuracy | Misclassified samples|
 | ----------- |--------------------:|---------:|---------------------:|
-|  Logisitc   |         All         |   0.98   |         40           |
-|  Perceptron |         All         |   0.97   |         66           |
-|  SVC        |         All         |   0.98   |         37           |
-|  kernel SVC |         All         |   0.96   |         82           |
+|  Logisitc   |         All         |   0.98   |         46           |
+|  Perceptron |         All         |   0.97   |         62           |
+|  SVC        |         All         |   0.98   |         46           |
+|  kernel SVC |         All         |   0.95   |         104          |
 |Decisiontree |         All         |   0.97   |         75           |
-|Randomforest |         All         |   0.97   |         66           |
-|  KNN        |         All         |   0.97   |         76           |
-|  Perceptron |         Core        |   0.97   |         76           |
+|Randomforest |         All         |   0.97   |         68           |
+|  KNN        |         All         |   0.96   |         86           |
+|  Perceptron |         Core        |   0.95   |         104          |
 |  Logisitc   |         Core        |   0.96   |         100          |
 |  SVC        |         Core        |   0.96   |         91           |
 |  kernel SVC |         Core        |   0.96   |         90           |
-|Decisiontree |         Core        |   0.96   |         100          |
+|Decisiontree |         Core        |   0.96   |         95           |
 |Randomforest |         Core        |   0.96   |         101          |
 |  KNN        |         Core        |   0.96   |         93           |
                                      
