@@ -58,8 +58,11 @@ The predicting power is quiet high using these explaining variables, the detaile
 |Decisiontree |         Core        |   0.96   |         95           |
 |Randomforest |         Core        |   0.96   |         101          |
 |  KNN        |         Core        |   0.96   |         93           |
+|  Logisitc   |         3PCA        |   0.96   |         87           |
+|  Logisitc   |         5PCA        |   0.96   |         86           |
+|  Logisitc   |         10PCA       |   0.97   |         72           |
                                      
-For PCA method, 3-5 PCA components have relatively high predicting accuracy about 0.97, adding it to 10 components won't improve accuracy much, while deducting it to 2 will lose accuracy.
+For PCA method, 3-5 PCA components have relatively high predicting accuracy about 0.97, adding it to 10 components won't improve accuracy much, so keeping 3-5 PCA components may be just fine.
 We later check that our selection of parameters and division of training/testing sample is rational.
 K-fold method also give high accuracy of predicting.
 Then we increase the ROC/AUC to 0.96 by using majorty voting combining methods of Logisitic,decision tree and KNN.
@@ -71,7 +74,7 @@ Bagging and Adaboosting also help improve the accuracy here.
 We meet some difficulties when trying to use sentiment analysis on our dataset. We derive two sentiment variables from the description and find prediction based on these two sentiment variables can have about 0.8 accuracy. However, it is likely that this explaining power is mainly due to their relationship with core variables.
 
 ### Implentation 
-#[Analysis of renrendai](https://github.com/kylinanddragon/GITHUB_1701213097-PHBS_TQFML/Project/blob/master/Analysis%20of%20renrendai.ipynb)
+## [Analysis of renrendai](https://github.com/kylinanddragon/GITHUB_1701213097-PHBS_TQFML/Project/blob/master/Analysis%20of%20renrendai.ipynb)
 
 ### Conclusion
 We derive a classifier based on public information of p2p contract and applicants with *high accuracy*. This classifier contains information about *payment information of p2p contract*, *demographic information of borrower* and *credit history of borrower*.<br> And among them, though the latter two part contribute to the accuracy of model estimation, payment information itself has relatively high predicting accuracy. 
