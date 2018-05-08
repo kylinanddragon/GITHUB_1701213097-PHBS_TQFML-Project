@@ -27,7 +27,7 @@ Randomly divide training set and test set.
 
 | Variable name      |  unit  |  range     | mean  |
 | -------------      |-------:|-----------:|------:|
-| principal          |RMB yuan| 3000-500000| 64464 |
+| principal          |RMB yuan| 3000-500000| 64454 |
 | interest rate      |        | 10 %-24 %  | 14.01%|
 | maturity           |  month |    3-36    |  18.65|
 
@@ -44,24 +44,24 @@ The predicting power is quiet high using these explaining variables, the detaile
 
 | Method      | Explaining variable | Accuracy | Misclassified samples|
 | ----------- |--------------------:|---------:|---------------------:|
-|  Logisitc   |         All         |   0.98   |         46           |
-|  Perceptron |         All         |   0.97   |         62           |
-|  SVC        |         All         |   0.98   |         46           |
-|  kernel SVC |         All         |   0.95   |         104          |
-|Decisiontree |         All         |   0.97   |         75           |
-|Randomforest |         All         |   0.97   |         68           |
+|  Logisitc   |         All         |   0.98   |         42           |
+|  Perceptron |         All         |   0.98   |         46           |
+|  SVC        |         All         |   0.98   |         36           |
+|  kernel SVC |         All         |   0.96   |         98           |
+|Decisiontree |         All         |   0.97   |         70           |
+|Randomforest |         All         |   0.97   |         64           |
 |  KNN        |         All         |   0.96   |         86           |
-|  Perceptron |         Core        |   0.95   |         104          |
-|  Logisitc   |         Core        |   0.96   |         100          |
-|  SVC        |         Core        |   0.96   |         91           |
+|  Perceptron |         Core        |   0.96   |         98           |
+|  Logisitc   |         Core        |   0.96   |         101          |
+|  SVC        |         Core        |   0.96   |         92           |
 |  kernel SVC |         Core        |   0.96   |         90           |
-|Decisiontree |         Core        |   0.96   |         95           |
-|Randomforest |         Core        |   0.96   |         101          |
-|  KNN        |         Core        |   0.96   |         93           |
-|  Logisitc   |         3PCA        |   0.96   |         87           |
-|  Logisitc   |         5PCA        |   0.96   |         86           |
-|  Logisitc   |         10PCA       |   0.97   |         72           |
-                                     
+|Decisiontree |         Core        |   0.96   |         99           |
+|Randomforest |         Core        |   0.96   |         100          |
+|  KNN        |         Core        |   0.94   |         126          |
+|  Logisitc   |         3PCA        |   0.96   |         85           |
+|  Logisitc   |         5PCA        |   0.96   |         89           |
+|  Logisitc   |         10PCA       |   0.97   |         67           |
+Logistic did best when adding all variables and kerenl SVC did best when only adding core variables.                                   
 For PCA method, 3-5 PCA components have relatively high predicting accuracy about 0.97, adding it to 10 components won't improve accuracy much, so keeping 3-5 PCA components may be just fine.
 We later check that our selection of parameters and division of training/testing sample is rational.
 K-fold method also give high accuracy of predicting.
