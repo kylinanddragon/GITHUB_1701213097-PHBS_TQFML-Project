@@ -68,6 +68,7 @@ For PCA method, 3-5 PCA components have relatively high predicting accuracy abou
 We later check that our selection of parameters and division of training/testing sample is rational.
 K-fold method also give high accuracy of predicting.
 Then we increase the ROC/AUC to 0.96 by using majorty voting combining methods of Logisitic,decision tree and KNN.
+
 ![alt text](https://github.com/kylinanddragon/GITHUB_1701213097-PHBS_TQFML-Project/blob/master/ROC%20AUC%20curve.png)
 
 Bagging and Adaboosting also help improve the accuracy here.
