@@ -4,8 +4,9 @@ This include analysis on one platform of small amount credit in China——RenRe
 ### Team members: Winnie Wang (Wang Xinbo)
 ### Data set: Samples on Renren dai website. 
 Renren dai is one of the biggest online P2P website in China. It is honored as top 100 internet companies in both 2015 and 2016.
-Here is one of the samples's website in the dataset [sample](http://www.renrendai.com/lend/detailPage.action?loanId=203002
-)  The last column of [original dataset](https://github.com/kylinanddragon/GITHUB_1701213097-PHBS_TQFML-Project/blob/master/dataset%20of%20Renren%20Dai.xls) is the link of the related website. (Note this dataset itself is not used for our analysis, we derive two dataset from this original set and detailed information can be found below)
+Here is one of the samples's website in the dataset: [sample](http://www.renrendai.com/lend/detailPage.action?loanId=203002
+)  
+The last column of [original dataset](https://github.com/kylinanddragon/GITHUB_1701213097-PHBS_TQFML-Project/blob/master/dataset%20of%20Renren%20Dai.xls) is the link of the related website. (Note this dataset itself is not used for our analysis, we derive two dataset from this original set and detailed information can be found below)
 
 ## Brief Description of dataset
 The data mainly contains five kinds of information.
