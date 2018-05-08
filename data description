@@ -7,9 +7,9 @@ This dataset contains 9769 samples from one of the biggest P2P website in Chinaâ
 ## Variable lists
 
 The explained variable in this model is status. The value of status equals 0 for failure and 1 for success. Null value show that this application
-hasn't finished and we don't know the result yet. We remove this part of samples, the remaining samples contain 7495 data points.
+hasn't finished and we don't know the result yet. We remove this part of samples, the remaining samples contain 7493 data points.
 
-y is relatively balanced with 64.52% 1 and 35.48% 0. Overall 64.52% percent of P2P application are successful.
+y is relatively balanced with 64.51% 1 and 35.49% 0. Overall 64.51% percent of P2P application are successful.
 
 The explaining variable list is relatively long, among them, the most important ones directly related to the cash flow of the contract are:
 
