@@ -2,7 +2,7 @@
 This include analysis on one platform of small amount credit in China——RenRen Dai
 # Repostiory name：Analysis on P2P success 
 ### Team members: Winnie Wang (Wang Xinbo)
-### Data set: Over 9000 samples on Renren dai website. 
+### Data set: Samples on Renren dai website. 
 Renren dai is one of the biggest online P2P website in China. It is honored as top 100 internet companies in both 2015 and 2016.
 
 ## Brief Description of dataset
@@ -39,7 +39,7 @@ I also use bagging and
 For the fifth part of the data, I try to process them with sentiment analysis and I derive two variables from it.
 
 #### 3. Measurement of model performance
-For the measurement of the performance of the model, I plan to use accuracy as a measure of model performance. And base on this model, give potential borrower advice on whether their condition can get the loan or they should increase interest rate or do something similar to attract more lenders. In this way, this platform can work better to match potential borrowers and lenders.
+For the measurement of the performance of the model, I plan to use accuracy as a measure of model performance. And base on this model, give potential borrower advice on whether their condition can get the loan or they should increase interest rate or do something similar to attract more lenders. In this way, this platform can work better to match potential borrowers and lenders. The selection of parameters are later proved to be proper by GridSearch. 
 The predicting power is quiet high using these explaining variables, the detailed data is as followed:
 
 | Method      | Explaining variable | Accuracy | Misclassified samples|
