@@ -6,14 +6,14 @@ This include analysis on one platform of small amount credit in China——RenRe
 Renren dai is one of the biggest online P2P website in China. It is honored as top 100 internet companies in both 2015 and 2016.
 Here is one of the samples's website in the dataset: [sample](http://www.renrendai.com/lend/detailPage.action?loanId=203002
 )  
-The last column of [original dataset](https://github.com/kylinanddragon/GITHUB_1701213097-PHBS_TQFML-Project/blob/master/dataset%20of%20Renren%20Dai.xls) is the link of the related website. (Note this dataset itself is not used for our analysis, we derive two dataset from this original set and detailed information can be found below)
+The last column of [original dataset](https://github.com/kylinanddragon/GITHUB_1701213097-PHBS_TQFML-Project/blob/master/dataset%20of%20Renren%20Dai.xls) is the link of the related website. (Note this dataset itself is not used for our analysis, we derive two datasets from this original set and detailed information can be found below)
 
 ## Brief Description of dataset
 The data mainly contains five kinds of information.
 1.	Whether the p2p contract is success. This is used as **dependent variable** here.
 2.	Basic information about p2p contract including principal, interest rate,
-duration
-correlation analysis show strong edvidence of their influence on p2p success
+duration.
+ Correlation analysis show strong edvidence of their influence on p2p success
 3.	Basic information about borrower: Income, education background, age, job, city, marital status.
 4.	Index representing borrower’s credit history: credit score, line of credit, all kinds of credit report and authentication. (15 dummy variables here)
 5.	Brief introduction of the usage of money. 
