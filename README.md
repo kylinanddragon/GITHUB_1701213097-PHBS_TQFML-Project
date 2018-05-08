@@ -61,6 +61,7 @@ The predicting power is quiet high using these explaining variables, the detaile
 |  Logisitc   |         3PCA        |   0.96   |         85           |
 |  Logisitc   |         5PCA        |   0.96   |         89           |
 |  Logisitc   |         10PCA       |   0.97   |         67           |
+
 Logistic did best when adding all variables and kerenl SVC did best when only adding core variables.                                   
 For PCA method, 3-5 PCA components have relatively high predicting accuracy about 0.97, adding it to 10 components won't improve accuracy much, so keeping 3-5 PCA components may be just fine.
 We later check that our selection of parameters and division of training/testing sample is rational.
